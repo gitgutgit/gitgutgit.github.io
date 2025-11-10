@@ -1,80 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gitgutgit Fullstack Basic</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <h1>gitgutgit's Repository List</h1>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jeewon Kim — Personal Site</title>
+  <meta name="description" content="Jeewon Kim — CS @ Columbia. Full‑stack developer focused on AI systems, distributed apps, and social impact projects." />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jeewon Kim",
+    "jobTitle": "Software Engineer / CS Student",
+    "affiliation": {"@type": "CollegeOrUniversity", "name": "Columbia University"},
+    "url": "https://github.com/gitgutgit",
+    "email": "mailto:jk4864@columbia.edu",
+    "telephone": "+1-646-659-3829",
+    "address": {"@type": "PostalAddress", "addressLocality": "Fort Lee", "addressRegion": "NJ", "addressCountry": "US"}
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="container grid">
+      <header class="hero">
+        <span class="badge">Open to Internships & Projects</span>
+        <h1>Jeewon Kim</h1>
+        <p class="lead">CS @ Columbia (GPA 3.82 · May 2026). Full‑stack developer focused on <strong>AI systems</strong>, <strong>distributed apps</strong>, and <strong>social impact</strong> products. Previously at Generous Health and TVCF; founder of Tchelp.org.</p>
+        <div class="actions">
+          <a class="btn primary" href="mailto:jk4864@columbia.edu">Email Me</a>
+          <a class="btn" href="https://github.com/gitgutgit" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="#projects">Featured Projects</a>
+          <a class="btn" href="#experience">Experience</a>
+        </div>
+      </header>
 
-    <section>
-      <h2>LLM application</h2>
-      <ul>
-        <li>
-          <a href="https://github.com/gitgutgit/CustomAiChatBot"
-            >CustomAIChatBot</a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/gitgutgit/AnalysisAiBot">AnaylsisAiBot</a>
-        </li>
-      </ul>
-    </section>
+      <section id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Tchelp.org — Tech Support Platform</h3>
+            <p class="meta">Founder & Lead Developer · 2025 — Present</p>
+            <ul class="list">
+              <li>React + FastAPI, Supabase, Cloudflare CDN.</li>
+              <li>Launched to 1,000+ unique visitors and 13,000+ requests in the first month.</li>
+            </ul>
+            <p><a href="http://tchelp.org/" target="_blank" rel="noopener">Visit site</a></p>
+          </article>
+          <article class="card">
+            <h3>Logical Benchmark — Research</h3>
+            <p class="meta">LLM strategic reasoning on rule‑based games (Advisor: Prof. Tony Dear)</p>
+            <ul class="list">
+              <li>Python framework for self‑play and evaluation (win rate, move validity).</li>
+              <li>Designed metrics to assess model decision‑making.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>AI‑Powered Reading Feed</h3>
+            <p class="meta">GraphQL middleware + AWS EC2 backend</p>
+            <ul class="list">
+              <li>Personalized recommendation pipeline and scalable endpoints.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-    <section>
-      <h2>Python Backend</h2>
-      <ul>
-        <li>
-          <a href="https://github.com/gitgutgit/MiddleWarePython"
-            >MiddleWarePython</a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/gitgutgit/simple_mongodb"
-            >simple_mongodb</a
-          >
-        </li>
-      </ul>
-    </section>
+      <section id="experience" class="two-col">
+        <div>
+          <h2 class="section-title">Experience</h2>
+          <article class="card">
+            <h3>Generous Health LLC — Founding Engineer</h3>
+            <p class="meta">May 2024 — Present · Los Angeles (Remote‑friendly)</p>
+            <ul class="list">
+              <li>Enabled two non‑technical teammates to ship backends (FastAPI/Flask), cutting delivery time by ~25%.</li>
+              <li>Stabilized workflows and integrations; improved backend architecture.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>TVCF — Software Engineer</h3>
+            <p class="meta">Jun 2024 — Aug 2024, Summer 2025 · Seoul</p>
+            <ul class="list">
+              <li>Built RAG‑powered tagging API; improved ad‑video tagging efficiency by ~50%.</li>
+              <li>Boosted Elasticsearch search accuracy ~40%.</li>
+              <li>Developed multi‑agent ad campaign generator with LangGraph; cut API cost ~30% (GPT‑4o + Claude Sonnet mix).</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Korean Army — IT Technician</h3>
+            <p class="meta">Oct 2020 — Apr 2022 · Goyang‑si</p>
+            <ul class="list">
+              <li>Managed TACS security, Linux devices, and wireless systems; handled IP/network hygiene.</li>
+            </ul>
+          </article>
+        </div>
+        <aside>
+          <h2 class="section-title">At a Glance</h2>
+          <div class="card">
+            <div class="skill-chips">
+              <span class="chip">Java</span>
+              <span class="chip">Python</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">C++</span>
+              <span class="chip">C#</span>
+              <span class="chip">React</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">Flask</span>
+              <span class="chip">Docker</span>
+              <span class="chip">MongoDB</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">PyTorch</span>
+              <span class="chip">AWS</span>
+              <span class="chip">RAG</span>
+              <span class="chip">LangGraph</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Education</h3>
+            <p class="meta">Columbia University — B.S. in Computer Science</p>
+            <ul class="list">
+              <li>GPA 3.82 · Expected May 2026</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Leadership</h3>
+            <p class="meta">AI Storytelling Lead · Oct 2024 — Jan 2025</p>
+            <ul class="list">
+              <li>Workshops on NLP, multimodal storytelling; operations lead.</li>
+            </ul>
+          </div>
+          <div class="card contact">
+            <h3>Contact</h3>
+            <div>
+              <a href="mailto:jk4864@columbia.edu">jk4864@columbia.edu</a>
+              <div>Fort Lee, NJ · United States</div>
+              <div><a href="https://github.com/gitgutgit" target="_blank" rel="noopener">github.com/gitgutgit</a></div>
+            </div>
+          </div>
+        </aside>
+      </section>
 
-    <section>
-      <h2>Frontend</h2>
-      <ul>
-        <a href = "https://deluxe-pyrite-976.notion.site/Vanila-Js-a7b32b1cf6064225b9cb7fdb859bb836"> Frontend-basic-note(Notion)</a>
-        <!-- Add frontend-related repositories here -->
-        <li>
-          <a href="https://crime-insight-deploy.onrender.com">Crime-insight-deploy</a>
-          <br>
-          <span>Username: Jane Doe</span>
-          <br>
-          <span>Email: jane.doe@example.com</span>
-          <br>
-          <small>(It may take a while to connect for the first time)</small>
-          <br>
-          <a href="https://github.com/gitgutgit/Crime-insight">Crime-insight-sourcecode</a>
-        </li>
-      </ul>
-    </section>
-    
+      <section>
+        <h2 class="section-title">More Repositories</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>CustomAIChatBot</h3>
+            <p class="meta">LLM Application</p>
+            <p><a href="https://github.com/gitgutgit/CustomAiChatBot" target="_blank" rel="noopener">Source →</a></p>
+          </article>
+          <article class="card">
+            <h3>AnalysisAiBot</h3>
+            <p class="meta">LLM Application</p>
+            <p><a href="https://github.com/gitgutgit/AnalysisAiBot" target="_blank" rel="noopener">Source →</a></p>
+          </article>
+          <article class="card">
+            <h3>MiddleWarePython</h3>
+            <p class="meta">Python Backend</p>
+            <p><a href="https://github.com/gitgutgit/MiddleWarePython" target="_blank" rel="noopener">Source →</a></p>
+          </article>
+          <article class="card">
+            <h3>simple_mongodb</h3>
+            <p class="meta">Python Backend</p>
+            <p><a href="https://github.com/gitgutgit/simple_mongodb" target="_blank" rel="noopener">Source →</a></p>
+          </article>
+          <article class="card">
+            <h3>Crime Insight</h3>
+            <p class="meta">Frontend + Backend</p>
+            <p><a href="https://crime-insight-deploy.onrender.com" target="_blank" rel="noopener">Demo →</a> · <a href="https://github.com/gitgutgit/Crime-insight" target="_blank" rel="noopener">Source →</a></p>
+          </article>
+          <article class="card">
+            <h3>p5.js Sketch</h3>
+            <p class="meta">Creative Coding</p>
+            <p><a href="p5sketch.html" target="_blank" rel="noopener">Open →</a></p>
+          </article>
+        </div>
+      </section>
 
-    <section>
-      <h2>Miscellaneous</h2>
-      <ul>
-        <li>
-          <a href="p5sketch.html" target="_blank"
-            >p5.js Sketch(freshman first single project)</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://github.com/gitgutgit/gitignoreExample"
-            target="_blank"
-            >gitignoreExample</a
-          >
-        </li>
-      </ul>
-    </section>
-  </body>
+      <footer>
+        <div>© <span id="year"></span> Jeewon Kim — Built with HTML/CSS. Deployed on Vercel.</div>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
