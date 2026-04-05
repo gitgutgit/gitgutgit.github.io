@@ -40,23 +40,15 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 14px;
-    align-items: start; 
-  }
-  
-  @media (min-width: 760px) {
-    .cards { grid-template-columns: repeat(2, 1fr); }
-  }
-
-  @media (min-width: 1040px) {
-    .cards { grid-template-columns: repeat(2, 1fr); }
+    align-items: start;
   }
   @media (min-width: 760px) { .cards { grid-template-columns: repeat(2, 1fr); } }
   @media (min-width: 1040px) { .cards { grid-template-columns: repeat(3, 1fr); } }
 
-  .card { background: linear-gradient(180deg, var(--card), var(--soft)); border: 1px solid rgba(255,255,255,.08); border-radius: 16px; padding: 16px; display: grid; gap: 8px; min-height: 150px; position: relative; overflow: hidden; }
+  .card { background: linear-gradient(180deg, var(--card), var(--soft)); border: 1px solid rgba(255,255,255,.08); border-radius: 16px; padding: 16px; display: grid; gap: 8px; position: relative; overflow: hidden; }
   .card h3 { margin: 0; font-size: 16px; }
   .card .meta { color: var(--muted); font-size: 13px; }
-  .list { display: grid; gap: 6px; padding-left: 16px; margin: 0; }
+  .list { display: grid; gap: 6px; padding-left: 16px; margin: 0; font-size: 14px; line-height: 1.5; }
   .list li { margin: 0 0 4px; }
 
   .skill-chips { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -66,6 +58,7 @@
   .kicker { color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .14em; font-size: 12px; }
 
   .two-col { display: grid; grid-template-columns: 1fr; gap: 14px; }
+  .two-col > div, .two-col > aside { display: grid; gap: 14px; align-content: start; }
   @media (min-width: 880px) { .two-col { grid-template-columns: 1.2fr .8fr; } }
 
   .contact { display: grid; gap: 8px; }
