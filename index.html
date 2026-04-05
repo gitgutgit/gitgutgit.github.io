@@ -4,7 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jeewon Kim — Personal Site</title>
-  <meta name="description" content="Jeewon Kim — CS @ Columbia University. Full‑stack developer focused on AI systems, distributed apps, and social impact projects." />
+  <meta name="description" content="Jeewon Kim — CS @ Columbia University. Full-stack developer focused on AI systems, distributed apps, and social impact projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <script type="application/ld+json">
   {
@@ -21,11 +24,11 @@
 </head>
 <body>
   <div class="wrap">
-    <div class="container grid">
+    <div class="container">
       <header class="hero">
         <span class="badge">Seeking Full-Time Opportunities</span>
         <h1>Jeewon Kim</h1>
-        <p class="lead">CS @ Columbia (GPA 3.88 · May 2026). Full‑stack developer focused on <strong>AI systems</strong>, <strong>distributed apps</strong>, and <strong>social impact</strong> products. <br>Previously at Generous Health and TVCF, and founder of Tchelp.org.</p>
+        <p class="lead">CS @ Columbia (GPA 3.88 · May 2026). Full-stack developer focused on <strong>AI systems</strong>, <strong>distributed apps</strong>, and <strong>social impact</strong> products.<br>Previously at Generous Health and TVCF, and founder of Tchelp.org.</p>
         <div class="actions">
           <a class="btn primary" href="mailto:jk4864@columbia.edu">Email Me</a>
           <a class="btn" href="https://github.com/gitgutgit" target="_blank" rel="noopener">GitHub</a>
@@ -34,11 +37,12 @@
         </div>
       </header>
 
-      <section id="projects">
+      <section id="projects" class="reveal">
         <h2 class="section-title">Featured Projects</h2>
         <div class="cards">
-          <article class="card">
+          <article class="card" data-category="fullstack">
             <h3>Tchelp.org — Tech Support Platform</h3>
+            <span class="tag fullstack">Full-Stack</span>
             <p class="meta">Founder & Lead Developer · 2025 — Present</p>
             <ul class="list">
               <li>React + FastAPI, Supabase, Cloudflare CDN.</li>
@@ -46,28 +50,32 @@
             </ul>
             <p><a href="http://tchelp.org/" target="_blank" rel="noopener">Visit site</a></p>
           </article>
-          <article class="card">
+
+          <article class="card" data-category="ai">
             <h3>YOLO + PPO Game Agent (Vision → Policy)</h3>
+            <span class="tag ai">AI/ML</span>
             <p class="meta">PyTorch · Ultralytics YOLO · Reinforcement Learning</p>
             <ul class="list">
               <li>Trained a vision-based agent: YOLO detections are encoded into a 26-D state and fed to a PPO policy.</li>
-              <li>Used behavioral cloning from a heuristic expert to bootstrap PPO and prevent degenerate “camping” behaviors.</li>
+              <li>Used behavioral cloning from a heuristic expert to bootstrap PPO and prevent degenerate "camping" behaviors.</li>
               <li>Implemented a reproducible pipeline: <code>GameCore</code> (training) + <code>web_app</code> (Socket.IO demo).</li>
             </ul>
             <p><a href="https://github.com/gitgutgit/YOLO-You-Only-Live-Once" target="_blank" rel="noopener">Visit repo</a></p>
           </article>
 
-          <article class="card">
+          <article class="card" data-category="research">
             <h3>Logical Benchmark — Research</h3>
-            <p class="meta">LLM strategic reasoning on rule‑based games (Advisor: Prof. Tony Dear)</p>
+            <span class="tag research">Research</span>
+            <p class="meta">LLM strategic reasoning on rule-based games (Advisor: Prof. Tony Dear)</p>
             <ul class="list">
-              <li>Python framework for self‑play and evaluation (win rate, move validity).</li>
-              <li>Designed metrics to assess model decision‑making.</li>
+              <li>Python framework for self-play and evaluation (win rate, move validity).</li>
+              <li>Designed metrics to assess model decision-making.</li>
             </ul>
           </article>
 
-          <article class="card">
-            <h3>AI‑Powered Reading Feed</h3>
+          <article class="card" data-category="fullstack ai">
+            <h3>AI-Powered Reading Feed</h3>
+            <span class="tag fullstack">Full-Stack</span>
             <p class="meta">GraphQL middleware + AWS EC2 backend</p>
             <ul class="list">
               <li>Personalized recommendation pipeline and scalable endpoints.</li>
@@ -75,8 +83,9 @@
             <p><a href="https://github.com/Gnosis-Media" target="_blank" rel="noopener">Visit repos</a></p>
           </article>
 
-          <article class="card">
+          <article class="card" data-category="ai hackathon">
             <h3>ImposterAI — AI Social Deduction Game</h3>
+            <span class="tag hackathon">Hackathon</span>
             <p class="meta">MIT Hackathon · Raspberry Pi · Arduino · AI</p>
             <ul class="list">
               <li>AI-powered Imposter-style tabletop game where AI acts as both host and deceptive player.</li>
@@ -88,14 +97,14 @@
         </div>
       </section>
 
-      <section id="experience" class="two-col">
+      <section id="experience" class="two-col reveal">
         <div>
           <h2 class="section-title">Experience</h2>
           <article class="card">
             <h3>Generous Health LLC — Founding Engineer</h3>
-            <p class="meta">May 2024 — Present · Los Angeles (Remote‑friendly)</p>
+            <p class="meta">May 2024 — Present · Los Angeles (Remote-friendly)</p>
             <ul class="list">
-              <li>Enabled two non‑technical teammates to ship backends (FastAPI/Flask), cutting delivery time by ~25%.</li>
+              <li>Enabled two non-technical teammates to ship backends (FastAPI/Flask), cutting delivery time by ~25%.</li>
               <li>Stabilized workflows and integrations; improved backend architecture.</li>
             </ul>
           </article>
@@ -103,14 +112,14 @@
             <h3>TVCF — Software Engineer</h3>
             <p class="meta">Jun 2024 — Aug 2024, Summer 2025 · Seoul</p>
             <ul class="list">
-              <li>Built RAG‑powered tagging API; improved ad‑video tagging efficiency by ~50%.</li>
+              <li>Built RAG-powered tagging API; improved ad-video tagging efficiency by ~50%.</li>
               <li>Boosted Elasticsearch search accuracy ~40%.</li>
-              <li>Developed multi‑agent ad campaign generator with LangGraph; cut API cost ~30% (GPT‑4o + Claude Sonnet mix).</li>
+              <li>Developed multi-agent ad campaign generator with LangGraph; cut API cost ~30% (GPT-4o + Claude Sonnet mix).</li>
             </ul>
           </article>
           <article class="card">
             <h3>Korean Army — IT Technician</h3>
-            <p class="meta">Oct 2020 — Apr 2022 · Goyang‑si</p>
+            <p class="meta">Oct 2020 — Apr 2022 · Goyang-si</p>
             <ul class="list">
               <li>Managed TACS security, Linux devices, and wireless systems; handled IP/network hygiene.</li>
             </ul>
@@ -120,21 +129,21 @@
           <h2 class="section-title">At a Glance</h2>
           <div class="card">
             <div class="skill-chips">
-              <span class="chip">Java</span>
-              <span class="chip">Python</span>
-              <span class="chip">JavaScript</span>
-              <span class="chip">C++</span>
-              <span class="chip">C#</span>
-              <span class="chip">React</span>
-              <span class="chip">FastAPI</span>
-              <span class="chip">Flask</span>
-              <span class="chip">Docker</span>
-              <span class="chip">MongoDB</span>
-              <span class="chip">MySQL</span>
-              <span class="chip">PyTorch</span>
-              <span class="chip">AWS</span>
-              <span class="chip">RAG</span>
-              <span class="chip">LangGraph</span>
+              <span class="chip" data-group="language">Java</span>
+              <span class="chip" data-group="language">Python</span>
+              <span class="chip" data-group="language">JavaScript</span>
+              <span class="chip" data-group="language">C++</span>
+              <span class="chip" data-group="language">C#</span>
+              <span class="chip" data-group="framework">React</span>
+              <span class="chip" data-group="framework">FastAPI</span>
+              <span class="chip" data-group="framework">Flask</span>
+              <span class="chip" data-group="infra">Docker</span>
+              <span class="chip" data-group="infra">MongoDB</span>
+              <span class="chip" data-group="infra">MySQL</span>
+              <span class="chip" data-group="ai">PyTorch</span>
+              <span class="chip" data-group="infra">AWS</span>
+              <span class="chip" data-group="ai">RAG</span>
+              <span class="chip" data-group="ai">LangGraph</span>
             </div>
           </div>
           <div class="card">
@@ -156,42 +165,48 @@
             <div>
               <a href="mailto:jk4864@columbia.edu">jk4864@columbia.edu</a>
               <div>Fort Lee, NJ · United States</div>
-              <div>Mygithub: <a href="https://github.com/gitgutgit" target="_blank" rel="noopener">github.com/gitgutgit</a></div>
+              <div>GitHub: <a href="https://github.com/gitgutgit" target="_blank" rel="noopener">github.com/gitgutgit</a></div>
             </div>
           </div>
         </aside>
       </section>
 
-      <section>
+      <section class="reveal">
         <h2 class="section-title">More Repositories</h2>
         <div class="cards">
           <article class="card">
             <h3>CustomAIChatBot</h3>
+            <span class="tag ai">AI/ML</span>
             <p class="meta">LLM Application</p>
             <p><a href="https://github.com/gitgutgit/CustomAiChatBot" target="_blank" rel="noopener">Source →</a></p>
           </article>
           <article class="card">
             <h3>AnalysisAiBot</h3>
+            <span class="tag ai">AI/ML</span>
             <p class="meta">LLM Application</p>
             <p><a href="https://github.com/gitgutgit/AnalysisAiBot" target="_blank" rel="noopener">Source →</a></p>
           </article>
           <article class="card">
             <h3>MiddleWarePython</h3>
+            <span class="tag misc">Backend</span>
             <p class="meta">Python Backend</p>
             <p><a href="https://github.com/gitgutgit/MiddleWarePython" target="_blank" rel="noopener">Source →</a></p>
           </article>
           <article class="card">
             <h3>simple_mongodb</h3>
+            <span class="tag misc">Backend</span>
             <p class="meta">Python Backend</p>
             <p><a href="https://github.com/gitgutgit/simple_mongodb" target="_blank" rel="noopener">Source →</a></p>
           </article>
           <article class="card">
             <h3>Crime Insight</h3>
+            <span class="tag fullstack">Full-Stack</span>
             <p class="meta">Frontend + Backend</p>
             <p><a href="https://crime-insight-deploy.onrender.com" target="_blank" rel="noopener">Demo →</a> · <a href="https://github.com/gitgutgit/Crime-insight" target="_blank" rel="noopener">Source →</a></p>
           </article>
           <article class="card">
             <h3>p5.js Sketch</h3>
+            <span class="tag misc">Creative</span>
             <p class="meta">Creative Coding</p>
             <p><a href="p5sketch.html" target="_blank" rel="noopener">Open →</a></p>
           </article>
@@ -199,13 +214,35 @@
       </section>
 
       <footer>
-        <div>© <span id="year"></span> Jeewon Kim — Built with HTML/CSS. Deployed on Github</div>
+        <div>© <span id="year"></span> Jeewon Kim — Built with HTML/CSS. Deployed on GitHub</div>
       </footer>
     </div>
   </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Scroll reveal
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          e.target.style.transitionDelay = '0s';
+          e.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+    // Card cursor glow
+    if (window.matchMedia('(hover: hover)').matches) {
+      document.querySelectorAll('.card').forEach(card => {
+        card.addEventListener('mousemove', e => {
+          const r = card.getBoundingClientRect();
+          card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+          card.style.setProperty('--my', (e.clientY - r.top) + 'px');
+        });
+      });
+    }
   </script>
 </body>
 </html>
