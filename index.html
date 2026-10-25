@@ -3,246 +3,239 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jeewon Kim — Personal Site</title>
-  <meta name="description" content="Jeewon Kim — CS @ Columbia University. Full-stack developer focused on AI systems, distributed apps, and social impact projects." />
+  <title>Jeewon Kim</title>
+  <meta name="description" content="Jeewon Kim — AI engineer at Doosan Digital Innovation in Seoul. Builds agentic and generative AI systems and researches how to evaluate language agents. Columbia CS 2026." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Jeewon Kim",
-    "jobTitle": "Software Engineer / CS Student",
-    "affiliation": {"@type": "CollegeOrUniversity", "name": "Columbia University"},
-    "url": "https://github.com/gitgutgit",
+    "jobTitle": "AI Engineer",
+    "worksFor": {"@type": "Organization", "name": "Doosan Digital Innovation"},
+    "alumniOf": {"@type": "CollegeOrUniversity", "name": "Columbia University"},
+    "url": "https://gitgutgit.github.io",
+    "sameAs": ["https://github.com/gitgutgit"],
     "email": "mailto:jk4864@columbia.edu",
-    "address": {"@type": "PostalAddress", "addressLocality": "Fort Lee", "addressRegion": "NJ", "addressCountry": "US"}
+    "address": {"@type": "PostalAddress", "addressLocality": "Seoul", "addressCountry": "KR"}
   }
   </script>
 </head>
 <body>
-  <div class="wrap">
-    <div class="container">
-      <header class="hero">
-        <span class="badge">Seeking Full-Time Opportunities</span>
-        <h1>Jeewon Kim</h1>
-        <p class="lead">CS @ Columbia (GPA 3.88 · May 2026). Full-stack developer focused on <strong>AI systems</strong>, <strong>distributed apps</strong>, and <strong>social impact</strong> products.<br>Previously at Generous Health and TVCF, and founder of Tchelp.org.</p>
-        <div class="actions">
-          <a class="btn primary" href="mailto:jk4864@columbia.edu">Email Me</a>
-          <a class="btn" href="https://github.com/gitgutgit" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="#projects">Featured Projects</a>
-          <a class="btn" href="#experience">Experience</a>
-        </div>
-      </header>
+  <a class="skip" href="#work">Skip to content</a>
 
-      <section id="projects" class="reveal">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="cards">
-          <article class="card" data-category="fullstack">
-            <h3>Tchelp.org — Tech Support Platform</h3>
-            <span class="tag fullstack">Full-Stack</span>
-            <p class="meta">Founder & Lead Developer · 2025 — Present</p>
-            <ul class="list">
-              <li>React + FastAPI, Supabase, Cloudflare CDN.</li>
-              <li>Launched to 1,000+ unique visitors and 13,000+ requests in the first month.</li>
-            </ul>
-            <p><a href="http://tchelp.org/" target="_blank" rel="noopener">Visit site</a></p>
-          </article>
-
-          <article class="card" data-category="ai">
-            <h3>YOLO + PPO Game Agent (Vision → Policy)</h3>
-            <span class="tag ai">AI/ML</span>
-            <p class="meta">PyTorch · Ultralytics YOLO · Reinforcement Learning</p>
-            <ul class="list">
-              <li>Trained a vision-based agent: YOLO detections are encoded into a 26-D state and fed to a PPO policy.</li>
-              <li>Used behavioral cloning from a heuristic expert to bootstrap PPO and prevent degenerate "camping" behaviors.</li>
-              <li>Implemented a reproducible pipeline: <code>GameCore</code> (training) + <code>web_app</code> (Socket.IO demo).</li>
-            </ul>
-            <p><a href="https://github.com/gitgutgit/YOLO-You-Only-Live-Once" target="_blank" rel="noopener">Visit repo</a></p>
-          </article>
-
-          <article class="card" data-category="research">
-            <h3>Logical Benchmark — Research</h3>
-            <span class="tag research">Research</span>
-            <p class="meta">LLM strategic reasoning on rule-based games (Advisor: Prof. Tony Dear)</p>
-            <ul class="list">
-              <li>Python framework for self-play and evaluation (win rate, move validity).</li>
-              <li>Designed metrics to assess model decision-making.</li>
-            </ul>
-          </article>
-
-          <article class="card" data-category="fullstack ai">
-            <h3>AI-Powered Reading Feed</h3>
-            <span class="tag fullstack">Full-Stack</span>
-            <p class="meta">GraphQL middleware + AWS EC2 backend</p>
-            <ul class="list">
-              <li>Personalized recommendation pipeline and scalable endpoints.</li>
-            </ul>
-            <p><a href="https://github.com/Gnosis-Media" target="_blank" rel="noopener">Visit repos</a></p>
-          </article>
-
-          <article class="card" data-category="ai hackathon">
-            <h3>ImposterAI — AI Social Deduction Game</h3>
-            <span class="tag hackathon">Hackathon</span>
-            <p class="meta">MIT Hackathon · Raspberry Pi · Arduino · AI</p>
-            <ul class="list">
-              <li>AI-powered Imposter-style tabletop game where AI acts as both host and deceptive player.</li>
-              <li>Physical lotus-shaped device with LED coasters; Raspberry Pi + Arduino for hardware control.</li>
-              <li>AI generates context-aware lies and deception strategies during live gameplay.</li>
-            </ul>
-            <p><a href="https://github.com/gitgutgit/mit-hardmode-ImposterAI" target="_blank" rel="noopener">Visit repo</a></p>
-          </article>
-        </div>
-      </section>
-
-      <section id="experience" class="two-col reveal">
-        <div>
-          <h2 class="section-title">Experience</h2>
-          <article class="card">
-            <h3>Generous Health LLC — Founding Engineer</h3>
-            <p class="meta">May 2024 — Present · Los Angeles (Remote-friendly)</p>
-            <ul class="list">
-              <li>Enabled two non-technical teammates to ship backends (FastAPI/Flask), cutting delivery time by ~25%.</li>
-              <li>Stabilized workflows and integrations; improved backend architecture.</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>TVCF — Software Engineer</h3>
-            <p class="meta">Jun 2024 — Aug 2024, Summer 2025 · Seoul</p>
-            <ul class="list">
-              <li>Built RAG-powered tagging API; improved ad-video tagging efficiency by ~50%.</li>
-              <li>Boosted Elasticsearch search accuracy ~40%.</li>
-              <li>Developed multi-agent ad campaign generator with LangGraph; cut API cost ~30% (GPT-4o + Claude Sonnet mix).</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>Korean Army — IT Technician</h3>
-            <p class="meta">Oct 2020 — Apr 2022 · Goyang-si</p>
-            <ul class="list">
-              <li>Managed TACS security, Linux devices, and wireless systems; handled IP/network hygiene.</li>
-            </ul>
-          </article>
-        </div>
-        <aside>
-          <h2 class="section-title">At a Glance</h2>
-          <div class="card">
-            <div class="skill-chips">
-              <span class="chip" data-group="language">Java</span>
-              <span class="chip" data-group="language">Python</span>
-              <span class="chip" data-group="language">JavaScript</span>
-              <span class="chip" data-group="language">C++</span>
-              <span class="chip" data-group="language">C#</span>
-              <span class="chip" data-group="framework">React</span>
-              <span class="chip" data-group="framework">FastAPI</span>
-              <span class="chip" data-group="framework">Flask</span>
-              <span class="chip" data-group="infra">Docker</span>
-              <span class="chip" data-group="infra">MongoDB</span>
-              <span class="chip" data-group="infra">MySQL</span>
-              <span class="chip" data-group="ai">PyTorch</span>
-              <span class="chip" data-group="infra">AWS</span>
-              <span class="chip" data-group="ai">RAG</span>
-              <span class="chip" data-group="ai">LangGraph</span>
-            </div>
-          </div>
-          <div class="card">
-            <h3>Education</h3>
-            <p class="meta">Columbia University — B.S. in Computer Science</p>
-            <ul class="list">
-              <li>GPA 3.88 · Expected May 2026</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Leadership</h3>
-            <p class="meta">AI Storytelling Lead · Oct 2024 — Jan 2025</p>
-            <ul class="list">
-              <li>Workshops on NLP, multimodal storytelling; operations lead.</li>
-            </ul>
-          </div>
-          <div class="card contact">
-            <h3>Contact</h3>
-            <div>
-              <a href="mailto:jk4864@columbia.edu">jk4864@columbia.edu</a>
-              <div>Fort Lee, NJ · United States</div>
-              <div>GitHub: <a href="https://github.com/gitgutgit" target="_blank" rel="noopener">github.com/gitgutgit</a></div>
-            </div>
-          </div>
-        </aside>
-      </section>
-
-      <section class="reveal">
-        <h2 class="section-title">More Repositories</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>CustomAIChatBot</h3>
-            <span class="tag ai">AI/ML</span>
-            <p class="meta">LLM Application</p>
-            <p><a href="https://github.com/gitgutgit/CustomAiChatBot" target="_blank" rel="noopener">Source →</a></p>
-          </article>
-          <article class="card">
-            <h3>AnalysisAiBot</h3>
-            <span class="tag ai">AI/ML</span>
-            <p class="meta">LLM Application</p>
-            <p><a href="https://github.com/gitgutgit/AnalysisAiBot" target="_blank" rel="noopener">Source →</a></p>
-          </article>
-          <article class="card">
-            <h3>MiddleWarePython</h3>
-            <span class="tag misc">Backend</span>
-            <p class="meta">Python Backend</p>
-            <p><a href="https://github.com/gitgutgit/MiddleWarePython" target="_blank" rel="noopener">Source →</a></p>
-          </article>
-          <article class="card">
-            <h3>simple_mongodb</h3>
-            <span class="tag misc">Backend</span>
-            <p class="meta">Python Backend</p>
-            <p><a href="https://github.com/gitgutgit/simple_mongodb" target="_blank" rel="noopener">Source →</a></p>
-          </article>
-          <article class="card">
-            <h3>Crime Insight</h3>
-            <span class="tag fullstack">Full-Stack</span>
-            <p class="meta">Frontend + Backend</p>
-            <p><a href="https://crime-insight-deploy.onrender.com" target="_blank" rel="noopener">Demo →</a> · <a href="https://github.com/gitgutgit/Crime-insight" target="_blank" rel="noopener">Source →</a></p>
-          </article>
-          <article class="card">
-            <h3>p5.js Sketch</h3>
-            <span class="tag misc">Creative</span>
-            <p class="meta">Creative Coding</p>
-            <p><a href="p5sketch.html" target="_blank" rel="noopener">Open →</a></p>
-          </article>
-        </div>
-      </section>
-
-      <footer>
-        <div>© <span id="year"></span> Jeewon Kim — Built with HTML/CSS. Deployed on GitHub</div>
-      </footer>
+  <header class="hero">
+    <div class="shell">
+      <h1>Jeewon<br>Kim</h1>
+      <p class="intro">I build agentic and generative AI systems at Doosan Digital Innovation in Seoul, and I research how to evaluate language agents. Columbia Computer Science, class of 2026.</p>
+      <nav class="links" aria-label="Contact">
+        <a href="mailto:jk4864@columbia.edu">Email</a>
+        <a href="https://github.com/gitgutgit" target="_blank" rel="noopener">GitHub</a>
+        <a href="#notebook">Research notebook</a>
+      </nav>
     </div>
-  </div>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    <!-- Career trace: positions are set from data-at in main.js -->
+    <figure class="trace shell" aria-label="Career timeline">
+      <ol class="trace-track">
+        <li class="ev up span" data-at="2020-10" data-to="2022-04"><a class="lab" href="#work-army" aria-describedby="peek-work-army"><time>2020</time><span>Korean Army, IT technician</span></a><p class="peek" id="peek-work-army" role="tooltip">Ran TACS security, Linux devices, and wireless networks for 18 months.</p></li>
+        <li class="ev down" data-at="2024-05"><a class="lab" href="#work-gh" aria-describedby="peek-work-gh"><time>May 2024</time><span>Generous Health</span></a><p class="peek" id="peek-work-gh" role="tooltip">First engineer. Set up the backend so non-engineers could ship services, about 25% faster.</p></li>
+        <li class="ev up" data-at="2024-06"><a class="lab" href="#work-tvcf" aria-describedby="peek-work-tvcf"><time>Jun 2024</time><span>TVCF, software engineer</span></a><p class="peek" id="peek-work-tvcf" role="tooltip">RAG tagging API for ad videos and a LangGraph multi-agent campaign generator.</p></li>
+        <li class="ev down" data-at="2025-01"><a class="lab" href="#proj-tchelp" aria-describedby="peek-proj-tchelp"><time>2025</time><span>Founded TCHelp.org</span></a><p class="peek" id="peek-proj-tchelp" role="tooltip">Trauma Center Help: a nonprofit that sends donations straight to trauma centers.</p></li>
+        <li class="ev up end" data-at="2026-05"><a class="lab" href="#edu-columbia" aria-describedby="peek-edu-columbia"><time>May 2026</time><span>Columbia, B.S. in CS</span></a><p class="peek" id="peek-edu-columbia" role="tooltip">B.S. in Computer Science, GPA 3.835. Research on evaluating LLM agents.</p></li>
+        <li class="ev down end now" data-at="2026-09"><a class="lab" href="#work-doosan" aria-describedby="peek-work-doosan"><time>Sep 2026</time><span>Doosan Digital Innovation</span></a><p class="peek" id="peek-work-doosan" role="tooltip">Finding AI use cases across Doosan Group and taking them from PoC to deployment.</p></li>
+      </ol>
+    </figure>
+  </header>
 
-    // Scroll reveal
-    const revealObs = new IntersectionObserver((entries) => {
-      entries.forEach((e, i) => {
-        if (e.isIntersecting) {
-          e.target.style.transitionDelay = '0s';
-          e.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.08 });
-    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+  <main class="shell">
+    <section id="work" class="row">
+      <h2>Work</h2>
+      <div class="entries">
+        <article class="entry" id="work-doosan">
+          <header>
+            <h3>Doosan Digital Innovation</h3>
+            <p class="when">Sep 2026 – present, Seoul</p>
+          </header>
+          <p class="role">AI solution development and service planning, BU[AI]</p>
+          <ul>
+            <li>Find and prioritize AI use cases with teams across Doosan Group, set KPIs, and take them from PoC to deployment.</li>
+            <li>Turn business processes and data into AI service requirements and solution architecture; build agentic and GenAI systems on open-source and external platforms inside group IT.</li>
+            <li>Evaluate AI business models and new opportunities, including physical AI and robotics.</li>
+          </ul>
+        </article>
 
-    // Card cursor glow
-    if (window.matchMedia('(hover: hover)').matches) {
-      document.querySelectorAll('.card').forEach(card => {
-        card.addEventListener('mousemove', e => {
-          const r = card.getBoundingClientRect();
-          card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
-          card.style.setProperty('--my', (e.clientY - r.top) + 'px');
-        });
-      });
-    }
-  </script>
+        <article class="entry" id="work-gh">
+          <header>
+            <h3>Generous Health LLC</h3>
+            <p class="when">May 2024 – 2026, Los Angeles (remote)</p>
+          </header>
+          <p class="role">Founding engineer</p>
+          <ul>
+            <li>Set up backend patterns (FastAPI, Flask) that let two non-technical teammates ship services, cutting delivery time by about 25%.</li>
+            <li>Stabilized workflows and third-party integrations and reworked the backend architecture.</li>
+          </ul>
+        </article>
+
+        <article class="entry" id="work-tvcf">
+          <header>
+            <h3>TVCF</h3>
+            <p class="when">Summers 2024 and 2025, Seoul</p>
+          </header>
+          <p class="role">Software engineer</p>
+          <ul>
+            <li>Built a RAG-based tagging API for ad videos, making tagging about 50% more efficient.</li>
+            <li>Improved Elasticsearch search accuracy by about 40%.</li>
+            <li>Built a multi-agent ad campaign generator in LangGraph; mixing GPT-4o and Claude Sonnet cut API cost by about 30%.</li>
+          </ul>
+        </article>
+
+        <article class="entry" id="work-army">
+          <header>
+            <h3>Republic of Korea Army</h3>
+            <p class="when">Oct 2020 – Apr 2022, Goyang</p>
+          </header>
+          <p class="role">IT technician</p>
+          <ul>
+            <li>Ran TACS security, Linux devices, and wireless systems, and kept IP and network configuration clean.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="row">
+      <h2>Projects</h2>
+      <div class="entries">
+        <article class="entry">
+          <header>
+            <h3>Decision Playground</h3>
+            <p class="when">2026, personal</p>
+          </header>
+          <p>If a small decision model’s confidence can be trusted, only the ambiguous cases need an LLM. This testbed checks that claim: a confidence gate routes between small models and Claude on ticket routing, elevator dispatch, and robot pick-and-place, all scored the same way.</p>
+          <ul>
+            <li>Trained my own decider: Qwen3.5-2B with LoRA (0.33% of weights) and an option-scoring head, temperature-calibrated.</li>
+            <li>Compared it with Laya, Mica-4B, and Claude Haiku, plotting accuracy against the share of cases sent to the LLM.</li>
+          </ul>
+          <p class="stack">Python, PyTorch, PEFT, Claude API, vanilla JS</p>
+        </article>
+
+        <article class="entry">
+          <header>
+            <h3>YOLO: You Only Live Once</h3>
+            <p class="when">Fall 2025, Columbia</p>
+          </header>
+          <p>An agent that plays a 2D survival game from the screen alone. YOLOv8-nano detections become a 26-dimensional state, and a policy is first distilled from an expert, then fine-tuned with PPO.</p>
+          <ul>
+            <li>Team of three. I fine-tuned the detector, built the distillation pipeline, designed the end-to-end system, and ran the evaluation.</li>
+          </ul>
+          <p class="stack">PyTorch, Ultralytics YOLO, PPO, ONNX Runtime, Flask</p>
+          <p class="go">
+            <a href="https://yolo-web-demo-production.up.railway.app" target="_blank" rel="noopener">Play the demo</a>
+            <a href="https://github.com/gitgutgit/YOLO-You-Only-Live-Once" target="_blank" rel="noopener">Code</a>
+            <a href="https://raw.githubusercontent.com/gitgutgit/YOLO-You-Only-Live-Once/main/YOLO_dl_paper.pdf" target="_blank" rel="noopener">Report (PDF)</a>
+          </p>
+        </article>
+
+        <article class="entry" id="proj-tchelp">
+          <header>
+            <h3>TCHelp.org <span class="aka">Trauma Center Help</span></h3>
+            <p class="when">2025 – present, founder</p>
+          </header>
+          <p>A nonprofit platform that sends donations straight to trauma centers. I cover the running costs so every donation reaches a center.</p>
+          <ul>
+            <li>React and FastAPI on Supabase behind Cloudflare. 1,000+ unique visitors and 13,000+ requests in the first month.</li>
+          </ul>
+          <p class="go"><a href="https://tchelp.org/" target="_blank" rel="noopener">tchelp.org</a></p>
+        </article>
+
+        <article class="entry">
+          <header>
+            <h3>ImposterAI</h3>
+            <p class="when">MIT hackathon</p>
+          </header>
+          <p>A tabletop social-deduction game where the AI is both the host and a deceptive player, inventing context-aware lies as the game unfolds. A lotus-shaped device with LED coasters runs on Raspberry Pi and Arduino.</p>
+          <p class="go"><a href="https://github.com/gitgutgit/mit-hardmode-ImposterAI" target="_blank" rel="noopener">Code</a></p>
+        </article>
+
+        <article class="entry">
+          <header>
+            <h3>AI-powered reading feed</h3>
+            <p class="when">Columbia</p>
+          </header>
+          <p>A personalized recommendation pipeline with GraphQL middleware and an AWS EC2 backend.</p>
+          <p class="go"><a href="https://github.com/Gnosis-Media" target="_blank" rel="noopener">Code</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="research" class="row">
+      <h2>Research</h2>
+      <div class="entries">
+        <article class="entry">
+          <header>
+            <h3>LGL-bench</h3>
+            <p class="when">With Prof. Tony Dear, Columbia</p>
+          </header>
+          <p>How should we measure strategic behavior in language agents? We use games whose best move is computable (Baskin-31, Op-Max) as measuring instruments, plus a three-player social-deduction game, and show how win rate, flat per-turn metrics, and simulated partners can each distort which model looks best.</p>
+          <p class="stack">Manuscript in revision</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="notebook" class="row">
+      <h2>Notebook</h2>
+      <div class="entries">
+        <article class="entry">
+          <p><a class="strong" href="https://aitrace-dun.vercel.app/en" target="_blank" rel="noopener">Trace &amp; Theory</a> is where I keep longer write-ups, concept notes, and browser demos for the work above. It is invite-only for now, <a href="mailto:jk4864@columbia.edu?subject=Trace%20%26%20Theory%20access">email me</a> for access.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="row">
+      <h2>Education</h2>
+      <div class="entries">
+        <article class="entry" id="edu-columbia">
+          <header>
+            <h3>Columbia University</h3>
+            <p class="when">Graduated May 2026</p>
+          </header>
+          <p class="role">B.S. in Computer Science, GPA 3.835</p>
+          <p>AI Storytelling lead (Oct 2024 – Jan 2025): ran workshops on NLP and multimodal storytelling.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="toolkit" class="row">
+      <h2>Toolkit</h2>
+      <dl class="toolkit">
+        <dt>AI</dt><dd>LLM agents, RAG, LangGraph, PyTorch, LoRA fine-tuning, YOLO, PPO</dd>
+        <dt>Languages</dt><dd>Python, Java, JavaScript, C++, C#</dd>
+        <dt>Backend</dt><dd>FastAPI, Flask, React, GraphQL</dd>
+        <dt>Data and infra</dt><dd>Docker, AWS, Supabase, MongoDB, MySQL, Elasticsearch</dd>
+      </dl>
+    </section>
+
+    <section id="archive" class="row">
+      <h2>Smaller things</h2>
+      <ul class="archive">
+        <li><a href="https://github.com/gitgutgit/Crime-insight" target="_blank" rel="noopener">Crime Insight</a> <span>full-stack crime data explorer (<a href="https://crime-insight-deploy.onrender.com" target="_blank" rel="noopener">demo</a>)</span></li>
+        <li><a href="https://github.com/gitgutgit/CustomAiChatBot" target="_blank" rel="noopener">CustomAIChatBot</a> <span>LLM chatbot</span></li>
+        <li><a href="https://github.com/gitgutgit/AnalysisAiBot" target="_blank" rel="noopener">AnalysisAiBot</a> <span>LLM analysis bot</span></li>
+        <li><a href="https://github.com/gitgutgit/MiddleWarePython" target="_blank" rel="noopener">MiddleWarePython</a> <span>Python middleware</span></li>
+        <li><a href="p5sketch.html" target="_blank" rel="noopener">p5.js sketch</a> <span>mock stock ticker and calculator</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="shell">
+    <p><a href="mailto:jk4864@columbia.edu">jk4864@columbia.edu</a></p>
+    <p>Seoul, Korea</p>
+    <p>© <span id="year">2026</span> Jeewon Kim</p>
+  </footer>
+
+  <script src="main.js" defer></script>
 </body>
 </html>
